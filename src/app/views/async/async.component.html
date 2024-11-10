@@ -1,0 +1,9 @@
+<body>
+<div class="container">
+  <h1>Aynschronous</h1>
+  <ul class="styled-list">
+    <li *ngFor="let text of screenTexts" [ngStyle]="{'background-color': text.includes('fetched') ? '#d1e7dd' : '#f0f0f0'}">{{ text }}</li>
+  </ul>
+  <p>Elapsed Time: {{ elapsedTime }} seconds</p>
+</div>
+</body>
